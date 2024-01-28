@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <link rel="stylesheet" href="/static/css/loading.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="login-box" id="loginbox">
+            <form action="/home" onsubmit="return fadeSubmit()">
+                <h2> Welcome To DetectifyX </h2>
+                <button type="submit">Lets Start</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        function fadeSubmit() {
+
+        // Fade out the wrapper div
+        $("#wrapper").fadeOut(500);
+
+        // Fade in the new page after fade out
+        setTimeout(function() {
+        window.location.href = "/home"; 
+        }, 500);
+
+        return false;
+        }
+    </script>
+</body>
+</html>

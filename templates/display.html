@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudySync</title>
+    <link rel="stylesheet" href="/static/css/display.css">
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+</head>
+<body>
+
+    <div class="header">
+        <nav class="nav"></nav>
+        <header class="header-content">
+            <a href="/home" class="logo">
+                <img src="/static/images/detectify3.png" alt="logoImage" class="logo-icon" />
+                <span class="logo-text">DetectifyX</span>
+            </a>
+            <a href="/home" class="Try-free">
+                Back To Home
+            </a>
+        </nav>
+        </header>
+    </div>
+
+    <div class="section">
+            <h1 class="heading-section">Unleash Visionary Insights with Precision Detection</h1>
+            <p>Demo With The Video/Img Or With Live WebCam</p>
+        <div class="section-images">
+            <div class="content-left">
+                <div class="image-container-left">
+                    <img src="/static/images/video1.jpg" alt="sectionImage" class="section-image-left" />
+                </div>
+            </div>        
+            <div class="content-right">
+                <div class="image-container-right">
+                    <img src="/static/images/camera.jpg" alt="sectionImage" class="section-image-right" />
+                </div>
+            </div>
+        </div>
+        <div class="button-group" id="scrollTrigger">
+            <a href="/demo/videoimg" class="start-button">Demo With Video/Img</a>
+            <a href="/demo/webcam" class="read-button" id="Readmore">Demo With Web Cam</a>
+        </div>
+    </div>
+
+    <div class="company-container">
+        <h2 class="company-title">Unlocking the Power of Visual Intelligence  🚀</h2>
+        <div class="company-grid">
+
+            <div class="company-logo">
+                <img  src="/static/images/python.png" class="svg-img"/>
+                <span class="logo-txt">Python</span>
+            </div>
+
+            <div class="company-logo">
+                <img  src="/static/images/opencv.png" class="svg-img"/>
+                <span class="logo-txt">OpenCV</span>
+            </div>
+
+            <div class="company-logo">
+                <img  src="/static/images/yolo.png" class="svg-img"/>
+                <span class="logo-txt">YOLOv8</span>
+            </div>
+
+            <div class="company-logo">
+                <img  src="/static/images/webdev.png" class="svg-img"/>
+                <span class="logo-txt">Web Development</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="feature-container">
+        <div class="feature-content">
+            <div class="main-info">
+                <h2 class="main-title">
+                    YOLOv8 Object Detection: Versatile Applications Unleashed
+                </h2>
+                <p class="main-description">
+                    Unlock the potential of YOLOv8 for versatile object detection. From autonomous vehicles to retail analytics, YOLOv8 empowers diverse applications with precision and efficiency                </p>
+            </div>
+            
+            <div class="feature-grid">
+                <!-- card 1 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/person.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Person Detection in Images
+                        </div>
+                        <div class="feature-description">
+                            Use YOLOv8 to detect and locate persons in images. This can be useful for applications like photo tagging, social media monitoring, or crowd analysis.                        </div>
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/vehical.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Vehicle Detection in Traffic Scenes
+                        </div>
+                        <div class="feature-description">
+                            Apply YOLOv8 to identify and track vehicles in images or video streams. This use case is valuable for traffic monitoring, congestion analysis, and smart transportation systems.                        </div>
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/animal.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Animal Detection in Wildlife Monitoring
+                        </div>
+                        <div class="feature-description">
+                            Utilize YOLOv8 for detecting animals in images captured by cameras in wildlife reserves. This can aid in species monitoring, population studies, and conservation efforts.                        </div>
+                    </div>
+                </div>
+                <!-- card 4 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/object.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Object Recognition in Retail Environments:
+                        </div>
+                        <div class="feature-description">
+                            Employ YOLOv8 to recognize and locate various objects on store shelves. This can assist in inventory management, product placement optimization, and retail analytics                        </div>
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/tools.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Tool Detection in Industrial Settings
+                        </div>
+                        <div class="feature-description">
+                            Use YOLOv8 to identify and locate tools or equipment in industrial environments. This application can improve safety, facilitate equipment maintenance, and enhance workplace efficiency                        </div>
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="feature-card">
+                    <div class="icon-container">
+                        <img class="feature-svg" src="/static/images/food.png"/>
+                    </div>
+                    <div class="feature-info">
+                        <div class="feature-title">
+                            Food Item Detection in Cooking Apps
+                        </div>
+                        <div class="feature-description">
+                            Apply YOLOv8 to recognize and locate different food items in images. This can enhance cooking apps by providing automatic ingredient detection and nutritional information                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="testimonial-container">
+        <div class="testimonial-content">
+            <h2 class="testimonial-title">
+                How It Look Like When You Use This 
+            </h2>
+            <div class="testimonial-grid">  
+                <!-- card 1 -->
+                <div class="testimonial-card">
+                    <img src="/static/images/hero.png"/>
+                </div>
+                <!-- card 2 -->
+                <div class="testimonial-card" id="hero2">
+                    <img src="/static/images/hero3.png"/>
+                </div>
+                <!-- card 3 -->
+                <div class="testimonial-card" id="hero3">
+                    <img src="/static/images/hero2.jpeg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <footer class="footer">
+
+            <div class="footer-top">
+
+                <div class="comp-logo">
+                    <a class="logo-link" href="/home">
+                        <img class="logo-svg" src="/static/images/detectify3.png"/>
+                        DetectifyX
+                    </a>
+                </div>
+                <p class="filler-text">Unleash Visionary Insights with Precision Detection.</p>
+                <div class="social">
+                        <a class="social-link" href="#">
+                            <img src="/static/images/instagram.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="/static/images/linkedin.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="/static/images/Microsoft.svg" class="social-icon" />
+                        </a>
+                        <a class="social-link">
+                            <img src="/static/images/twitter.svg" class="social-icon" />
+                        </a>
+                </div>
+            </div>
+
+            <div class="footer-grid">
+                        <!-- column 1 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Products
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="#overview" class="footer-link">Overview</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Solutions</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Pricing</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Customers</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 2 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Company
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="#overview" class="footer-link">About</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Investor Relations</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Jobs</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Press</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Blog</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 3 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Support
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="#overview" class="footer-link">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Documentation</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Chat</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">FAQ</a>
+                                </li>
+                            </ul>
+                </div>
+                        <!-- column 4 -->
+                <div class="footer-grid-column">
+                            <div class="footer-grid-heading">
+                                Legal
+                            </div>
+                            <ul class="footer-links-list">
+                                <li>
+                                    <a href="#overview" class="footer-link">Terms of Service</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Privacy Policy</a>
+                                </li>
+                                <li>
+                                    <a href="#overview" class="footer-link">Cookie Settings</a>
+                                </li>
+                                
+                            </ul>
+                </div>
+            </div>
+        </footer>
+        <div class="footer-copyright">
+            © 2024 - Present DetectifyX. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

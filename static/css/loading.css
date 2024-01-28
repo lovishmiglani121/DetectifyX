@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+:root{
+  --black-color:#fff;
+}
+
+.wrapper {
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  height:100vh;
+  width:100%;
+  background:url('https://i.pinimg.com/originals/09/05/a7/0905a74092fa43fce6218aa48f6a26a4.jpg') no-repeat;
+  background-size:cover;
+  background-position:center;
+  background-color: #66fcf1;
+  animation:animateBg 4s linear infinite;
+}
+@keyframes animateBg {
+  100% {
+    filter:hue-rotate(360deg);
+  }
+}
+.login-box {
+  position: relative;
+  width: 400px;
+  height: 450px;
+  background: transparent;
+  border-radius: 15px;
+  border: 2px solid rgba(255, 0, 0, 0.349);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(15px);
+}
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: filter 3s ease; /* Add a transition for the blur effect */
+}
+
+.login-box {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #1d4c00;
+}
+
+.loading {
+    opacity: 0; /* Hide the form when it has the 'loading' class */
+}
+
+.blur {
+    filter: blur(100px); /* Add blur effect */
+}
+h2 {
+  font-size:4em;
+  color:var(--black-color);
+  text-align:center;
+  padding-bottom: 2rem;
+}
+button {
+  width:100%;
+  height:40px;
+  background-color:#000;
+  border:1px dashed aqua;
+  border-radius:40px;
+  cursor:pointer;
+  font-size:1em;
+  color:#66fcf1;
+  font-weight:500;
+}
+@media (max-width:500px) {
+  .login-box {
+    width:100%;
+    height:100vh;
+    border:none;
+    border-radius:0;
+  }
+  .input-box {
+    width:290px;
+  }
+}
+
+#wrapper {
+    transition: opacity 0s;
+  }

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Video</title>
+    <link rel="stylesheet" href="/static/css/demohomeimg.css">
+
+</head>
+<body>
+  <div class="header">
+    <nav class="nav"></nav>
+    <header class="header-content">
+        <a href="/home" class="logo">
+            <img src="/static/images/detectify3.png" alt="logoImage" class="logo-icon" />
+            <span class="logo-text">DetectifyX</span>
+        </a>
+        <a href="/home" class="Try-free">
+            Back To Home
+        </a>
+    </nav>
+    </header>
+</div>
+
+<div class="section">
+  <h1 class="heading-section">Unleash Visionary Insights with Precision Detection</h1>
+  <p>Demo With The Image </p>
+  <div class="section-Video" style="gap:1rem;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: 500px;
+  background-color:rgb(214, 214, 214);
+  border-radius: 1rem;
+  margin: 0.5rem;
+  width: 100%;">
+    <img src="{{ url_for('uploaded_file', filename=image_path) }}" alt="" style="height: 400px; border-radius: 1rem; margin: 1rem;">
+</div>
+<header class="feature-box second">
+  <h1><strong>Output Image</strong></h1>
+</header>
+<!-- <div class="button-group" id="scrollTrigger">
+  <a href="/demo/video" class="start-button">Demo With Video</a>
+  <a href="/demo/webcam" class="read-button" id="Readmore">Demo With Image</a>
+</div> -->
+<div>
+<form action="/upload" method="post" enctype="multipart/form-data">
+    <label for="imageUpload"> </label>
+    <input type="file" id="imageUpload" name="image" class="start-button" style="width: 17rem; margin: 1rem;" accept="image/* ">
+    <br>
+    <input type="submit" class="read-button" value="Process">
+</form>
+</div>
+
+<div class="company-container">
+    <h2 class="company-title">Unlocking the Power of Visual Intelligence  🚀</h2>
+    <div class="company-grid">
+
+        <div class="company-logo">
+            <img  src="/static/images/python.png" class="svg-img"/>
+            <span class="logo-txt">Python</span>
+        </div>
+
+        <div class="company-logo">
+            <img  src="/static/images/opencv.png" class="svg-img"/>
+            <span class="logo-txt">OpenCV</span>
+        </div>
+
+        <div class="company-logo">
+            <img  src="/static/images/yolo.png" class="svg-img"/>
+            <span class="logo-txt">YOLOv8</span>
+        </div>
+
+        <div class="company-logo">
+            <img  src="/static/images/webdev.png" class="svg-img"/>
+            <span class="logo-txt">Web Development</span>
+        </div>
+
+    </div>
+</div>
+    <div class="footer-container">
+      <footer class="footer">
+
+          <div class="footer-top">
+
+              <div class="comp-logo">
+                  <a class="logo-link" href="/home">
+                      <img class="logo-svg" src="/static/images/detectify3.png"/>
+                      DetectifyX
+                  </a>
+              </div>
+              <p class="filler-text">Unleash Visionary Insights with Precision Detection.</p>
+              <div class="social">
+                      <a class="social-link" href="#">
+                          <img src="/static/images/instagram.svg" class="social-icon" />
+                      </a>
+                      <a class="social-link">
+                          <img src="/static/images/linkedin.svg" class="social-icon" />
+                      </a>
+                      <a class="social-link">
+                          <img src="/static/images/Microsoft.svg" class="social-icon" />
+                      </a>
+                      <a class="social-link">
+                          <img src="/static/images/twitter.svg" class="social-icon" />
+                      </a>
+              </div>
+          </div>
+
+          <div class="footer-grid">
+                      <!-- column 1 -->
+              <div class="footer-grid-column">
+                          <div class="footer-grid-heading">
+                              Products
+                          </div>
+                          <ul class="footer-links-list">
+                              <li>
+                                  <a href="#overview" class="footer-link">Overview</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Solutions</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Pricing</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Customers</a>
+                              </li>
+                          </ul>
+              </div>
+                      <!-- column 2 -->
+              <div class="footer-grid-column">
+                          <div class="footer-grid-heading">
+                              Company
+                          </div>
+                          <ul class="footer-links-list">
+                              <li>
+                                  <a href="#overview" class="footer-link">About</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Investor Relations</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Jobs</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Press</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Blog</a>
+                              </li>
+                          </ul>
+              </div>
+                      <!-- column 3 -->
+              <div class="footer-grid-column">
+                          <div class="footer-grid-heading">
+                              Support
+                          </div>
+                          <ul class="footer-links-list">
+                              <li>
+                                  <a href="#overview" class="footer-link">Contact</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Documentation</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Chat</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">FAQ</a>
+                              </li>
+                          </ul>
+              </div>
+                      <!-- column 4 -->
+              <div class="footer-grid-column">
+                          <div class="footer-grid-heading">
+                              Legal
+                          </div>
+                          <ul class="footer-links-list">
+                              <li>
+                                  <a href="#overview" class="footer-link">Terms of Service</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Privacy Policy</a>
+                              </li>
+                              <li>
+                                  <a href="#overview" class="footer-link">Cookie Settings</a>
+                              </li>
+                              
+                          </ul>
+              </div>
+          </div>
+      </footer>
+      <div class="footer-copyright">
+          © 2024 - Present DetectifyX. All rights reserved.
+      </div>
+  </div>
+
+</body>
+</html>
