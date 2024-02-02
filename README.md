@@ -56,14 +56,6 @@ This repository contains a machine learning application that utilizes YOLOv8 for
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
-## How to Access Hosted Application 🔗
-
-The latest version of the application is hosted and accessible through the following link:
-
-[DetectifyX - Live Demo](https://detectifyx.onrender.com/)
-
-Feel free to explore the latest features and improvements!
-
 ## Acknowledgments 🙏
 
 - YOLOv8: [YOLOv8 GitHub Repository](https://github.com/WongKinYiu/yolov8)
