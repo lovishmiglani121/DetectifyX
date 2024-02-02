@@ -56,9 +56,13 @@ This repository contains a machine learning application that utilizes YOLOv8 for
 
 Contributions are welcome! If you have suggestions or improvements, feel free to open an issue or submit a pull request.
 
-## License 📝
+## How to Access Hosted Application 🔗
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+The latest version of the application is hosted and accessible through the following link:
+
+[DetectifyX - Live Demo](https://detectifyx.onrender.com/)
+
+Feel free to explore the latest features and improvements!
 
 ## Acknowledgments 🙏
 
